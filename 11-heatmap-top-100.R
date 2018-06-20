@@ -30,37 +30,4 @@ generateHeatMap(
   layout_c = layout_c
 )
 dev.off()
-
-norm.dat <- normal_probe_data$df[top100probes,c(1:12,25:36,13:24)]
-dat.zScore <- t(apply(norm.dat,1,scale))
-rownames(dat.zScore) <- probe2gene
-colnames(dat.zScore) <- c(
-  paste('CeD-',1:12,sep=''),
-  paste('FDR-',1:12,sep=''),
-  paste('Ctrl-',1:12,sep='')
-)
-mat <- dat.zScore
-cols.gentleman <- function() {
-  library(RColorBrewer)
-  hmcol <- colorRampPalette(brewer.pal(10, "RdBu"))(256)
-  return(rev(hmcol))
-}
-pdf('./figures/11-top100-probes-random-forest-.pdf',
-    width = 5,
-    height = 12)
-mylmat = rbind(c(0,3),c(2,1),c(0,4))
-mylwid = c(0.5,3)
-mylhei = c(0.5,4.5,1)
-mylwid = c(0.5,3)
-gplots::heatmap.2(mat,
-                  col=cols.gentleman(),
-                  lmat = mylmat,
-                  lwid = mylwid,
-                  lhei = mylhei,
-                  dendrogram = 'column',
-                  tracecol = NULL,
-                  trace = "none",density.info = 'none',
-                  key.title ='z-score',
-                  #labRow = probe2gene,
-                  key.xlab = 'z-score')
-dev.off()
+###########################
