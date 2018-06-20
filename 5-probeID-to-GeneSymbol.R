@@ -1,10 +1,12 @@
 rm(list=ls());
 dat.anno <- read.delim(
-  file='./data/annotation/HumanHT-12_V4_0_R1_15002873_B_extracted.txt',
+  file='./data/annotation/HumanHT-12_V4_0_R1_15002873_B_extracted.txt.tar.gz',
   header=TRUE,
   stringsAsFactors = FALSE,
   sep = '\t',
-  row.names = NULL)
+  row.names = NULL,
+  skipNull = TRUE
+)
 
 probe2genes_data<-dat.anno[,c("Probe_Id",
                               "ILMN_Gene",
