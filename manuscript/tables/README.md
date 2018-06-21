@@ -17,7 +17,7 @@
   
   
 - **Table-S3c-Reactome-Down-in-FDR.xlsx**
-  Reactome pathway enrichment for down in FDR based on adjusted-pvalue <= 0.05 and without log2FC criteria.   
+  Reactome pathway enrichment for down in FDR based on adjusted-pvalue <= 0.05 and without log2(FC) criteria.   
 
 
 - **Table-S4a-pattern-analysis.xlsx**
