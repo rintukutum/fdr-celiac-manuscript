@@ -1,6 +1,6 @@
 # Supplementary Tables
 
-- **Table-S1-Differentially-expressed-genes-15June2018**;
+- **Table-S1-Differentially-expressed-genes.xlsx**;
   List of differentially expressed probes(genes) based on ajusted-pvalue <= 0.05 and |log2(FC)| >= 1.0
   
   
