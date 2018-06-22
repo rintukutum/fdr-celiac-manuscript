@@ -1,7 +1,7 @@
 # Supplementary Tables
 
 - **Table-S1-Differentially-expressed-genes-15June2018.xlsx**
-  List of differentially expressed probes(genes) based on ajusted-pvalue <= 0.05 and |log2(FC)| > 1.0
+  List of differentially expressed probes(genes) based on ajusted-pvalue <= 0.05 and |log2(FC)| >= 1.0
   
   
 - **Table-S2-data-for-FigureS1.xlsx**
@@ -12,8 +12,12 @@
   Gene ontology of differentially expressed genes (up and down)  for all comparisons.
 
 
+- **Table-S3b-MSigDB_Consistently_down_in_FDR.xlsx** 
+  MSigDB enrichment analysis based on genes which are down-regualted consistently in FDR in comparison to CeD and control.
+  
+  
 - **Table-S3c-Reactome-Down-in-FDR.xlsx**
-  Reactome pathway enrichment for down in FDR based on adjusted-pvalue <= 0.05 and without log2FC criteria.   
+  Reactome pathway enrichment for down in FDR based on adjusted-pvalue <= 0.05 and without log2(FC) criteria.   
 
 
 - **Table-S4a-pattern-analysis.xlsx**
