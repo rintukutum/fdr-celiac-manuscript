@@ -12,7 +12,7 @@
 Gene expression fold-change of study groups: Anti-tTG positive FDR, CeD, DC, Anti-tTG negative FDR.
 
 
-- **Table-S4-data-for-FigureS2.xlsx**;
+- **Table-S4-data-for-FigureS2-venn-diagram.xlsx**;
   List genes up-regulated and down-regulated in FDR and CeD.
   
   
